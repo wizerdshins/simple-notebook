@@ -1,0 +1,9 @@
+CREATE SCHEMA IF NOT EXISTS `notebook` DEFAULT CHARACTER SET utf8;
+
+CREATE TABLE IF NOT EXISTS `notebook`.`note` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `message` VARCHAR(100) NOT NULL,
+  `date` TIMESTAMP NOT NULL,
+  `done` BIT(1) NOT NULL,
+  PRIMARY KEY (`id`)
+COLLATE='utf8_general_ci';
